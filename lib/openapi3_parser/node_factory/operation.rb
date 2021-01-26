@@ -67,6 +67,7 @@ module Openapi3Parser
 
       def security_factory(context)
         NodeFactory::Array.new(context,
+                               default: nil,
                                value_factory: NodeFactory::SecurityRequirement)
       end
 
